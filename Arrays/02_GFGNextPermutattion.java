@@ -10,7 +10,7 @@
 //        Output: [2, 4, 5, O, 1, 7]
 //        Explanation: The next permutation of the given array is [2, 4, 5,
 package ArrayGFG;
-  
+     
 import java.util.Arrays;
 
 import static java.util.Collections.swap;
