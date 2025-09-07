@@ -9,7 +9,7 @@
 //        are
 //        three
 //        0s that are moved to the end.
-
+ 
 package ArrayGFG;
 import java.util.Arrays;
 public class GFGMoveAllZerosToEnd {
