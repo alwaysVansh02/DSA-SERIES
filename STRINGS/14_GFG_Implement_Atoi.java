@@ -50,5 +50,5 @@ public class GFGImplementAtoi {
         String s = "-42";
         System.out.println(obj.myAtoi(s));
     }
-}
+} 
 
