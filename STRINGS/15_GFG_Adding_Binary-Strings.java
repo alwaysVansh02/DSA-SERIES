@@ -11,7 +11,7 @@
 package StringsGFG;
       
 public class GFGAddTwoBinaryString {
-
+ 
         public String addBinary(String s1, String s2) {
 
             StringBuilder result = new StringBuilder();
