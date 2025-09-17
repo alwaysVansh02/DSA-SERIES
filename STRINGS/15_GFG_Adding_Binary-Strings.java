@@ -9,7 +9,7 @@
 //        1101
 //        10100
 package StringsGFG;
-      
+        
 public class GFGAddTwoBinaryString {
  
         public String addBinary(String s1, String s2) {
