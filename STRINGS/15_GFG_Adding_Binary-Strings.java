@@ -13,7 +13,7 @@ package StringsGFG;
 public class GFGAddTwoBinaryString {
  
         public String addBinary(String s1, String s2) {
-
+  
             StringBuilder result = new StringBuilder();
             int i = s1.length() - 1;
             int j = s2.length() - 1;
