@@ -16,7 +16,7 @@
 //        31
 //integer is smaller than -2 , then return -2
 //Examples:
-//Input: s — " 123
+//Input: s — " 123.   
 //Output: -123
 //Explanation: It is possible to convert -123 into an integer so
 //we returned in the form of an integer
