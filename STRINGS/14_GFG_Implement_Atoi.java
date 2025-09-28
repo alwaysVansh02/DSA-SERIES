@@ -25,7 +25,7 @@ package StringsGFG;
 public class GFGImplementAtoi {
 
     public int myAtoi(String s) {
-
+  
         // code here
         int sign = 1, res = 0, idx = 0;
         while (idx < s.length() && s.charAt(idx) == ' ') {
