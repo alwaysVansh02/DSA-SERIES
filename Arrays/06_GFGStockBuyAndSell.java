@@ -26,3 +26,4 @@ public class GFGStockBuyAndSell {
         System.out.println("Total Profit: " + obj.maximumProfit(prices));
     }
 }
+  
