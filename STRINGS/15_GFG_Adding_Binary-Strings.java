@@ -44,5 +44,5 @@ public class GFGAddTwoBinaryString {
     String s2 = "1011";
                     System.out.println(obj.addBinary(s1,s2));
 
-    }
+    } 
 }
