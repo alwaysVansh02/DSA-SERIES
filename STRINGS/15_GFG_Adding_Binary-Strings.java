@@ -28,7 +28,7 @@ public class GFGAddTwoBinaryString {
                     sum += s2.charAt(j) - '0';
                     j--;
                 }
-                result.append(sum % 2);
+                result.append(sum % 2); 
                 carry = sum / 2;
             }
             String ans = result.reverse().toString();
