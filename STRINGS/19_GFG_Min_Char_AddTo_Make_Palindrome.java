@@ -1,4 +1,4 @@
-package BinarySearch_Problem;
+package String_Problem;
 public class solution {
     public int minChar(String s) {
         String rev = new StringBuilder(s).reverse().toString();
