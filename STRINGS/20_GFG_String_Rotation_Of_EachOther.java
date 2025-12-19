@@ -1,0 +1,52 @@
+class Solution {
+    public boolean areRotations(String s1, String s2) {
+
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+        String text = s1 + s1;
+        return kmpSearch(text, s2);
+    }
+    private boolean kmpSearch(String text, String pattern) {
+        int[] lps = buildLPS(pattern);
+        int i = 0;
+        int j = 0; 
+        while (i < text.length()) {
+            if (text.charAt(i) == pattern.charAt(j)) {
+                i++;
+                j++;
+            }
+            if (j == pattern.length()) {
+                return true; 
+            }
+            else if (i < text.length() && text.charAt(i) != pattern.charAt(j)) {
+                if (j != 0) {
+                    j = lps[j - 1];
+                } else {
+                    i++;
+                }
+            }
+        }
+        return false;
+    }
+    private int[] buildLPS(String pat) {
+        int[] lps = new int[pat.length()];
+        int len = 0;
+        int i = 1;
+        while (i < pat.length()) {
+            if (pat.charAt(i) == pat.charAt(len)) {
+                len++;
+                lps[i] = len;
+                i++;
+            } else {
+                if (len != 0) {
+                    len = lps[len - 1];
+                } else {
+                    lps[i] = 0;
+                    i++;
+                }
+            }
+        }
+        return lps;
+    }
+}
