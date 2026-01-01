@@ -29,7 +29,7 @@ public class Minimum_in_Sorted_Rotated_Array {
             int[] arr = {5, 6, 7, 8, 9, 10, 1, 2, 3};
             int key = 3;
             System.out.println(search(arr, key));
-        }
+        } 
     }
 
 
