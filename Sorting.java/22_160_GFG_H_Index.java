@@ -22,7 +22,7 @@ public class Find_H_Index {
                     return i;
                 }
             }
-
+ 
             return 0;
         }
     }
