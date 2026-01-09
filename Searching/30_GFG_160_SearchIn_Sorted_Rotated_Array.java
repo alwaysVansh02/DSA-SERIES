@@ -21,7 +21,7 @@ public class Search_In_Rotated_Sorted_Array {
                         lo = mid + 1;
                     else
                         hi = mid - 1;
-                }
+                } 
             }
             return -1;
         }
