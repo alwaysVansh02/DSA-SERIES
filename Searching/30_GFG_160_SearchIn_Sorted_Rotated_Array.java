@@ -8,7 +8,7 @@ public class Search_In_Rotated_Sorted_Array {
             while (lo <= hi) {
                 int mid = lo + (hi - lo) / 2;
 
-                if (arr[mid] == key)
+                if (arr[mid] == key) 
                     return mid;
                 if (arr[mid] >= arr[lo]) {
                     if (key >= arr[lo] && key < arr[mid])
