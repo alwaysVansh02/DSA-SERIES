@@ -22,7 +22,7 @@ class Solution {
                 lo = mid1 + 1;
             }
         }
-        return 0; 
+        return 0;  
     }
     public static void main(String[] args) {
         Solution obj = new Solution();
