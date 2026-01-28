@@ -30,4 +30,4 @@ class Solution {
         int k2 = 2;
         System.out.println(obj.kthMissing(arr2, k2));
     }
-}
+}.  
