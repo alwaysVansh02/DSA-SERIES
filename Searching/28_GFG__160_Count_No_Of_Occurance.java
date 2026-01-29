@@ -7,7 +7,7 @@ public class Count_Of_Occurance {
                 return 0;
 
             int last = bound(arr, target, false);
-            return last - first;
+            return last - first; 
         }
         int bound(int[] arr, int target, boolean isfirst) {
             int low = 0, high = arr.length;
