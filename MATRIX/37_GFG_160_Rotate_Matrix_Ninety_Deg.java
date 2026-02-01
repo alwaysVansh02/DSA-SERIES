@@ -16,7 +16,7 @@ public class Rotate_Matrix_By_Ninety_Deg {
             for (int i = 0; i < n; i++) {
                 for (int j = i + 1; j < n; j++) {
                     int temp = mat[i][j];
-                    mat[i][j] = mat[j][i];
+                    mat[i][j] = mat[j][i]; 
                     mat[j][i] = temp;
                 }
             }
