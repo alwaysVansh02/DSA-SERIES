@@ -30,7 +30,7 @@ public class Rotate_Matrix_By_Ninety_Deg {
             };
             rotateMatrix(mat);
             for (int[] row : mat) {
-                for (int x : row) {
+                for (int x : row) { 
                     System.out.print(x + " ");
                 }
                 System.out.println();
