@@ -8,7 +8,7 @@ class solution {
         } else {
             char chl[] = sl.toCharArray();
             char ch2[] = s2.toCharArray();
-            Arrays.sort(chl);
+            Arrays.sort(chl); 
             Arrays.sort(ch2);
             if (Arrays.equals(chl, ch2)) {
                 return true;
