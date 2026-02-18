@@ -10,7 +10,7 @@ class Solution {
             int missing = arr[mid] - (mid + 1);
 
             if (missing >= k) {
-                res = mid + k;
+                res = mid + k; 
                 high = mid - 1;
             } else {
                 low = mid + 1;
