@@ -12,7 +12,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
             }else
                 return true;
         }
-        return false;
+        return false; 
     }
     public static void main(String[] args) {
         int [][] mat = {{3,30,38},
