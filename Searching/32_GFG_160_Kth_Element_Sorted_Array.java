@@ -20,7 +20,7 @@ class Solution {
                 hi = mid1 - 1;
             } else {
                 lo = mid1 + 1;
-            }
+            } 
         }
         return 0;  
     }
