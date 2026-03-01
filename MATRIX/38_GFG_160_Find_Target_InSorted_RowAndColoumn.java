@@ -15,7 +15,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
         return false; 
     }
     public static void main(String[] args) {
-        int [][] mat = {{3,30,38},
+        int [][] mat = {{3,30,38}, 
                         {20,52,54},
                         {35,60,69}};
         int x = 35;
