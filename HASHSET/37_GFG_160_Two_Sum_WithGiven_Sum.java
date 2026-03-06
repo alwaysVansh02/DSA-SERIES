@@ -13,7 +13,7 @@ public class TwoSum_Count_Points_WithGiven_Sum {
                 if (freq.containsKey(target - arr[i])) {
                     cnt += freq.get(target - arr[i]);
                 }
-                freq.put(arr[i],
+                freq.put(arr[i], 
                         freq.getOrDefault(arr[i], 0) + 1);
             }
             return cnt;
