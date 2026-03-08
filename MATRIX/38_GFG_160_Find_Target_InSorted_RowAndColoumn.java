@@ -11,7 +11,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
                 j--;
             }else
                 return true;
-        }
+        } 
         return false; 
     }
     public static void main(String[] args) {
