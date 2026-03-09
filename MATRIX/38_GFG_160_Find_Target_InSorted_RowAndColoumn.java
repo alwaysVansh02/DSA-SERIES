@@ -8,7 +8,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
             if (x > mat[i][j]){
                 i++;
             } else if (x < mat[i][j]) {
-                j--;
+                j--; 
             }else
                 return true;
         } 
