@@ -27,7 +27,7 @@ public class Set_Matrix_Row_Col_ToZero {
                 mat[0][j] =0;
             }
             if (c0 == 0) {
-
+ 
                 for (int i=0;i<n;i++)
                     mat[i][0] =0;
 
