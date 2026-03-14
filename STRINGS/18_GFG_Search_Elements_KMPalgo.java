@@ -23,7 +23,7 @@ class Solution {
                 j++;
             }
             if (j == m) {
-                ans.add(i - j);   
+                ans.add(i - j);    
                 j = lps[j - 1];
             }
             else if (i < n && txt.charAt(i) != pat.charAt(j)) {
