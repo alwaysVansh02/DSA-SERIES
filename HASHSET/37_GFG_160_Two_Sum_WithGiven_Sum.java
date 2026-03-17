@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class TwoSum_Count_Points_WithGiven_Sum {
    static int countPairs(int[] arr, int target) {
-            Map<Integer, Integer> freq = new HashMap<>();
+            Map<Integer, Integer> freq = new HashMap<>(); 
             int cnt = 0;
 
             for (int i = 0; i < arr.length; i++) {
