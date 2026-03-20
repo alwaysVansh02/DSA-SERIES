@@ -10,7 +10,7 @@ public class solution {
                 if (freq[s.charAt(i) - 'a'] == 1) {
                     return s.charAt(i);
                 }
-            }
+            } 
             return '$';
         }
         
