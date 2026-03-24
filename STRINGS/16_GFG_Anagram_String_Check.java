@@ -10,7 +10,7 @@ class solution {
             char ch2[] = s2.toCharArray();
             Arrays.sort(chl); 
             Arrays.sort(ch2);
-            if (Arrays.equals(chl, ch2)) {
+            if (Arrays.equals(chl, ch2)) { 
                 return true;
             } else {
                 return false; 
