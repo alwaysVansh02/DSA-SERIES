@@ -10,7 +10,7 @@ public class Rotate_Matrix_By_Ninety_Deg {
                     mat[i][start] = mat[i][end];
                     mat[i][end] = temp;
                     start++;
-                    end--;
+                    end--; 
                 }
             }
             for (int i = 0; i < n; i++) {
