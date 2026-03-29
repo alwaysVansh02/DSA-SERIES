@@ -8,7 +8,7 @@ class Solution {
 
         int n = txt.length();
         int m = pat.length();
-
+ 
         
         int[] lps = new int[m];
         computeLPS(pat, lps);
