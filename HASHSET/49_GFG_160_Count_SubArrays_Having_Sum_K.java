@@ -20,7 +20,7 @@ public class Count_SubArrays_Having_Sum_K {
     }
 
     public static void main(String[] args) {
-        int[] arr = {10,2,-2,-20,10};
+        int[] arr = {10,2,-2,-20,10}; 
         int k = -10;
         System.out.println("Count Of Subarrays Are : " + cntSubArrays( arr, k));
     }
