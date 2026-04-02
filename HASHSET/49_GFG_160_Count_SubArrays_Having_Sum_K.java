@@ -17,7 +17,7 @@ public class Count_SubArrays_Having_Sum_K {
             prefixSum.put(curSum, prefixSum.getOrDefault(curSum, 0) + 1);
         }
         return res;
-    }
+    } 
 
     public static void main(String[] args) {
         int[] arr = {10,2,-2,-20,10}; 
