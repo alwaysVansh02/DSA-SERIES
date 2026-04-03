@@ -10,7 +10,7 @@ public class Count_SubArrays_Having_Sum_K {
         int curSum =0;
         for (int  i=0; i< arr.length;i++){
             curSum += arr[i];
-            if (curSum== k)
+            if (curSum== k) 
                 res++;
             if (prefixSum.containsKey(curSum - k))
                 res += prefixSum.get(curSum - k);
