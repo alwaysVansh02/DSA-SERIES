@@ -19,7 +19,7 @@ public class Minimum_in_Sorted_Rotated_Array {
                     if (key > arr[mid] && key <= arr[hi])
                         lo = mid + 1;
                     else
-                        hi = mid - 1;
+                        hi = mid - 1; 
                 }
             }
             return -1;
