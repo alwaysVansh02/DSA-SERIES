@@ -7,7 +7,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
         while (i < n && j>=0){
             if (x > mat[i][j]){
                 i++;
-            } else if (x < mat[i][j]) {
+            } else if (x < mat[i][j]) { 
                 j--;  
             }else
                 return true;
