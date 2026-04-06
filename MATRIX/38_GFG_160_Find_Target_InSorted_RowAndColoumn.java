@@ -9,7 +9,7 @@ public class Search_In_RowAndColumn_Wise_TwoD_Array {
                 i++;
             } else if (x < mat[i][j]) { 
                 j--;  
-            }else
+            }else 
                 return true;
         } 
         return false; 
