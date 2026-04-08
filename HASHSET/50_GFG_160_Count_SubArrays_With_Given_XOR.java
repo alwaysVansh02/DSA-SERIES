@@ -14,7 +14,7 @@ public class Count_SubArrays_with_Given_XOR {
                 res++;
             mp.put(prefXoR,mp.getOrDefault(prefXoR,0) +1);
         }
-            return res;
+            return res; 
     }
 
     public static void main(String[] args) {
