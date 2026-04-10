@@ -17,7 +17,7 @@ public class Count_SubArrays_with_Given_XOR {
             return res; 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         int[] arr = {4,2,2,6,4};
         int  k = 6;
         System.out.println("Count of Subarray Is: " + subArrayXoR(arr, k));
