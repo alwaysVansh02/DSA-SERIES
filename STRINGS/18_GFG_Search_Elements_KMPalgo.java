@@ -13,7 +13,7 @@ class Solution {
         int[] lps = new int[m];
         computeLPS(pat, lps);
 
-        
+         
         int i = 0; 
         int j = 0; 
 
