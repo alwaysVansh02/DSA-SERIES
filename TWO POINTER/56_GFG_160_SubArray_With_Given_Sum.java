@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SubArray_With_Given_Sum {
       ///  2. nd Aproach Sliding Window - O(n) Time and O(1) Space
   static ArrayList<Integer> subArraySum(int[] arr, int target) {
-        int s = 0, e = 0;
+        int s = 0, e = 0; 
         ArrayList<Integer> res = new ArrayList<>();
         int curr = 0;
         for (int i = 0; i < arr.length; i++) {
