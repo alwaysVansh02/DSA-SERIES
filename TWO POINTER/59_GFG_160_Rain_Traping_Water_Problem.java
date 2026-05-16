@@ -19,7 +19,7 @@ public class Rain_Traping_Water_Problem {
                 Lmax = Math.max(Lmax, arr[left]);
                 left += 1;
             }
-        }
+        } 
         return res;
     }
 
