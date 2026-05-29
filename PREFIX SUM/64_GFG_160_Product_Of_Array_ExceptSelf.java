@@ -22,7 +22,7 @@ public class Product_OfArray_ExceptSelf {
                 prod *= arr[i];
             }
         }
-        int[] res = new int[n];
+        int[] res = new int[n]; 
         Arrays.fill(res, 1);
         if (zeros ==0){
             for (int i =0; i< n; i++)
