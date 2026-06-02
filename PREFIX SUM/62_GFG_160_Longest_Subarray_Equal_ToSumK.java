@@ -16,7 +16,7 @@ public class Longest_Subarray_With_Sum_EqualK {
         int prefSum =0;
         for (int i = 0; i< arr.length; i++){
             prefSum += arr[i];
-            if (prefSum == k)
+            if (prefSum == k) 
                 res = i+1;
             else if (map.containsKey(prefSum - k))
                 res = Math.max(res, i - map.get(prefSum - k));
