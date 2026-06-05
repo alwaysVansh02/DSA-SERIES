@@ -20,7 +20,7 @@ public class N_Queen_Problem {
     boolean[] rows = new boolean[n + 1];
     boolean[] diag1 = new boolean[2 * n + 1];
     boolean[] diag2 = new boolean[2 * n + 1];
-    nQueenUtil(1, n, board, rows, diag1, diag2 ,res);
+    nQueenUtil(1, n, board, rows, diag1, diag2 ,res); 
     return res;
 
     }
