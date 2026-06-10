@@ -35,7 +35,7 @@ class istNode{
             System.out.print(curr.data);
             if (curr.next!= null){
                 System.out.print(" -->");
-            }
+            } 
             curr = curr.next;
         }
         System.out.println();
