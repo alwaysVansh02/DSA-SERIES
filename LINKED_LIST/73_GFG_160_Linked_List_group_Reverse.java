@@ -16,7 +16,7 @@ class ReverseKGroup {
             next = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = next;
+            curr = next; 
 
             count++;
         }
