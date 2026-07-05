@@ -23,7 +23,7 @@ function reverse(head) {
 
 function addTwoLists(head1, head2) {
     
-    // reverse both lists to start 
+    // reverse both lists to start  
     // from least significant digit
     head1 = reverse(head1);
     head2 = reverse(head2);
