@@ -17,7 +17,7 @@ public class Longest_Subarray_EqualNo_ZeroOne {
             int res =0;
             for (int i = 0; i< arr.length;i++){
                 prefsum += (arr[i] == 0) ? -1 : 1; 
-                if (prefsum == 0)
+                if (prefsum == 0) 
                     res = i + 1;
                 if (mp . containsKey(prefsum))
                     res = Math.max(res , i - mp.get(prefsum));
