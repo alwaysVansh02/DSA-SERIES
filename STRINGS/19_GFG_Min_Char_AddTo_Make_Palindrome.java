@@ -15,7 +15,7 @@ public class solution {
                 if (len != 0) {
                     len = Ips[len - l];
                 } else {
-                    Ips[i] = 0;
+                    Ips[i] = 0; 
                     i++;
                 }
             }
