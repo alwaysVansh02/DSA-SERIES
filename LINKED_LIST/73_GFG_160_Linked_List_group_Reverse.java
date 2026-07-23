@@ -13,7 +13,7 @@ class ReverseKGroup {
         // first k nodes reverse
         while(curr != null && count < k){
 
-            next = curr.next;
+            next = curr.next; 
             curr.next = prev;
             prev = curr;
             curr = next; 
