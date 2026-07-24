@@ -19,7 +19,7 @@ public class Longest_Subarray_With_Sum_EqualK {
             if (prefSum == k)  
                 res = i+1;
             else if (map.containsKey(prefSum - k))
-                res = Math.max(res, i - map.get(prefSum - k));
+                res = Math.max(res, i - map.get(prefSum - k)); 
             if (!map.containsKey(prefSum))
                 map.put(prefSum, i);
         }
