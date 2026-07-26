@@ -11,7 +11,7 @@ public class Search_In_Sorted_Row_Wise_In_Matrix {
             if (x > arr[mid])
                 low = mid +1;
             else
-                high = mid- 1;
+                high = mid- 1; 
         }
         return false;
     }
