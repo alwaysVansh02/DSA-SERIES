@@ -25,7 +25,7 @@ public class Sudoku_Problem {
             if (isSafe(mat,row,col, num)){
                 mat[row][col] = num;
                 if (solveSudokuRec(mat,row,col + 1))
-                    return true;
+                    return true; 
                 mat[row][col] = 0; // backtrack
             }
         }
