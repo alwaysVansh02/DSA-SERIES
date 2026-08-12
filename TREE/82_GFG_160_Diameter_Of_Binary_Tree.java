@@ -4,7 +4,7 @@ package Tree;
 
 class Tree{
     int data;
-    Tree left,right;
+    Tree left,right; 
     Tree(int x){
         data = x;
         left = null;
