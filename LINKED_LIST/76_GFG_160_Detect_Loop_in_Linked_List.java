@@ -9,7 +9,7 @@ import java.util.HashSet;
 class NodeList{
     int data;
     Node next;
-    NodeList(int x){
+    NodeList(int x){ 
         this.data = x;
         this.next = null;
     }
