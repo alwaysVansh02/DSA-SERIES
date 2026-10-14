@@ -1,0 +1,84 @@
+// Given two arrays representing the inorder and preorder traversals of a binary tree, construct the binary tree and return its root.
+
+// Note: The inorder and preorder traversals contain unique values, and every value present in the preorder traversal is also found in the inorder traversal.  
+
+// Examples:
+
+// Input: inorder[] = [3, 1, 4, 0, 5, 2], preorder[] = [0, 1, 3, 4, 2, 5]
+// Output: [0, 1, 2, 3, 4, 5]
+package Tree;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+class treeNode{
+    int data;
+    treeNode left, right;
+    treeNode(int x){
+        data = x;
+        left = null;
+        right = null;
+    }
+}
+public class Binary_tree_Frm_Inorder_preorder_traversal {
+    ///  Aproach 1-> index of root in inorder in T->O(n^2) and s->O(h)
+    static int search(int[] inorder, int value, int left, int right){
+        for (int i = left; i<=right;i++){
+            if (inorder[i] == value)
+                return i;
+        }
+        return -1;
+    }
+    static treeNode buildTreeRecu(int[] inorder, int[] preorder, int[] preindex, int left, int right){
+        if (left>right)
+            return null;
+        int rootval = preorder[preindex[0]];
+        preindex[0]++;
+        treeNode root = new treeNode(rootval);
+        int index = search(inorder, rootval, left,right);
+        root.left = buildTreeRecu(inorder,preorder,preindex, left,index - 1);
+        root.right = buildTreeRecu(inorder, preorder,preindex, index + 1, right);
+
+        return root;
+    }
+    static treeNode buildTree(int[] inorder, int[] preorder){
+        int[] preindex = {0};
+        return buildTreeRecu(inorder, preorder,preindex,0, preorder.length - 1);
+    }
+    static int getHeight(treeNode root, int h){
+        if (root == null) return  h- 1;
+        return Math.max(getHeight(root.left, h - 1), getHeight(root.right, h + 1));
+    }
+    static void levelOrder(treeNode root){
+        Queue<List<Object>> queue = new LinkedList<>();
+        queue.offer(List.of(root, 0));
+
+        int lastLevel = 0;
+        int height = getHeight(root, 0);
+        while ( ! queue.isEmpty()){
+            List<Object> top = queue.poll();
+            treeNode node = (treeNode) top.get(0);
+            int lvl = (int) top.get(1);
+            if (lvl > lastLevel){
+                System.out.println();
+                lastLevel = lvl;
+            }
+            if (lvl > height) break;;
+            System.out.print((node.data == -1 ? "N" : node.data) + " ");
+            if (node.data == -1) continue;;
+            if (node.left == null) queue.offer((List.of(new treeNode(-1), lvl + 1)));
+            else queue.offer((List.of(node.left, lvl + 1)));
+
+            if (node.right == null) queue.offer(List.of(new treeNode(-1), lvl + 1));
+            else  queue.offer(List.of(node.right, lvl + 1));
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] inorder = {3,1,4,0,5,2};
+        int [] preorder = {0,1,3,4,2,5};
+        treeNode root = buildTree(inorder,preorder);
+        levelOrder(root);
+    }
+}
